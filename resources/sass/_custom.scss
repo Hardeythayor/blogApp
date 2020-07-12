@@ -1,0 +1,16 @@
+body {
+    background-color: #ffffff !important;
+}
+
+.shadow {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.postLink a small {
+    color: #888888 !important;
+}
+
+.postLink a:hover {
+    -moz-text-decoration: none !important;
+    text-decoration: none !important;
+}
