@@ -11,8 +11,15 @@
                     <div class="col-12">
                         <div class="card mb-3 shadow">
                             <div class="card-body">
-                                <h5>{{ $post->title }}</h5>
-                                <small>{{ $post->created_at }}</small>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4">
+                                    <img style="width: 100%" src="/storage/cover_images/{{$post->cover_image}}">
+                                    </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <h5>{{ $post->title }}</h5>
+                                        <small>Written on {{ $post->created_at }} by {{$post->user->name}}</small>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -7,7 +7,7 @@
             @include('../inc.messages')
         </div>
     </div>
-    {!! Form::open(['action' => 'PostsController@store', 'method' => 'post']) !!}
+    {!! Form::open(['action' => 'PostsController@store', 'method' => 'post', 'enctype' => 'multipart/form-data']) !!}
         <div class="row mb-4 mt-3">
             <div class="col-sm-6">
                 {{Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Enter Post Title'])}}
@@ -16,6 +16,11 @@
         <div class="row mb-4">
             <div class="col-sm-6">
                 {{Form::textarea('body', '', ['class' => 'form-control', 'placeholder' => 'Type your post here', 'rows' => '5'])}}
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-sm-6">
+                {{Form::file('cover_image')}}
             </div>
         </div>
         <div class="row">
